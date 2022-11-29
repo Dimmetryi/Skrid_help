@@ -204,7 +204,7 @@ a{
 	width:150px;
 	height:50px;
 	margin:0 auto;
-	
+	overflow: hidden;
 }
 
 .button_background:hover .red_bg{
@@ -217,7 +217,7 @@ a{
 	height: 100%;
 	position: absolute;
 	background-color:#DB3138;
-	left:-6000%;
+	left:-100%;
 	transition: 0.5s;
 	border-radius: 3px;
 }
@@ -710,16 +710,11 @@ a{
 	color: #FFFFFF;
 }
 
-.btn_pasting{
-	display: flex;
-	justify-content: center;
-	margin-top: 25px;
-}
+
 
 .link_bckg_bnt{
 	position: absolute;
 	margin-top: 7px;
-	margin-left: 55px;
 	font-family: 'ReformaGroteskDemiC';
 	font-style: normal;
 	font-weight: 600;
@@ -731,15 +726,17 @@ a{
 	color: #FFFFFF;
 }
 
-.bckg_btn{
-	width: 60px;
-	height: 41px;
-	background: #DB3138;
+.link_bckg_bnt:hover{
+	color:#DB3138;
+	transition:0.5s;
 }
 
-.link_bckg_bnt:hover{
-	color:rgb(92, 53, 53);
-	transition: 0.5s;
+.btn_pasting{
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+	overflow: hidden;
+	
 }
 
 .detailing{
