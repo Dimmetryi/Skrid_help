@@ -11,6 +11,8 @@ jQuery(document).ready(function ($) {
 $(document).ready(function() {
     $('.menu-burger__header').click(function() {
         $('.menu-burger__header').toggleClass('open-menu');
+        $('.menu_nav').toggleClass('open-menu');
+        $('body').toggleClass('.lock');
     });
 });
 
@@ -32,15 +34,16 @@ $(document).ready(function(){
         waitForAnimate:false,
         responsive:[
             {
-                breakpoint:768,
+                breakpoint:840,
                 settings:{
                     slidesToShow:2
                 }
             },
             {
-                breakpoint:480,
+                breakpoint:576,
                 settings:{
-                    slidesToShow:1
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
             }
         ],
@@ -94,22 +97,5 @@ buttons[0].addEventListener('click', function()
   det[0].style.display = "none";
 })
 
-// $(document).ready(function(){
-//     $("#nav_menu").on("click", "a", function(event){
-//         event.preventDefault();
-//         var id = $(this).attr('href'),
-//         top = $(id).offset().top;
-//         $('body,html').animate({scrollTop: top}, 1000);
-//     });
-// });
 
-// $('a[href^="#"').on('click', function() {
-
-//     let href = $(this).attr('href');
-   
-//     $('html, body').animate({
-//      scrollTop: $(href).offset().top - 160
-//     });
-//     return false;
-//    });
 
