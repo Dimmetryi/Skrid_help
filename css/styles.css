@@ -122,8 +122,6 @@ a{
 	}
 }
 
-
-
 @media(max-width:767px){
 	.menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
 		display: flex;
@@ -1065,7 +1063,7 @@ a{
 }	
 
 .form_first{
-	width: 636px;
+	width: 646px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -1098,7 +1096,9 @@ a{
 	margin-bottom: 10px;
 }
 
-input[type="text"]{
+textarea[name="text"]{
+	padding-top: 10px;
+	padding-left: 10px;
 	font-family: 'ReformaGroteskDemiC';
 	font-style: normal;
 	font-weight: 600;
@@ -1110,6 +1110,19 @@ input[type="text"]{
 }
 
 input[type="name"]{
+	padding-left: 10px;
+	font-family: 'ReformaGroteskDemiC';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 140%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+input[type="text"]{
+	padding-left: 10px;
 	font-family: 'ReformaGroteskDemiC';
 	font-style: normal;
 	font-weight: 600;
@@ -1519,5 +1532,71 @@ input[type="name"]{
 	}
 	.left_main{
 		margin-left: 20px;
+	}
+}
+
+@media(max-width:360px){
+	.right_main_content{
+		min-width: 200px;
+		max-width: 350px;
+	}
+	.left_main_mat_{
+		margin-top: 150px;
+		min-width: 200px;
+		max-width: 350px; 
+	}
+	.single-item .slick-arrow{
+		position: absolute;
+		top:50%;
+		width:40px;
+		height:60px;
+	}
+	.slider_item_material p{
+		padding-top: 20px;
+	}
+	.single-item .slick-arrow.slick-prev{
+		left: 10px;
+	}
+	/* Стрелка вправо */
+	.single-item .slick-arrow.slick-next{
+		right: 10px;
+	}
+	.left_main p{	
+		font-size: 12px;
+		margin-top: 20px;
+	}
+	.title_head{
+		font-size: 90px;
+	}
+	.left_content_achiev h1{
+		font-weight: 400;
+		font-size: 28px;
+		width: 280px;
+		margin-bottom: 30px;
+	}
+	.left_content_achiev p{
+		font-size: 22px;
+		max-width: 280px;
+	}
+	.right_content_achiev{
+   		 max-width: 400px;
+	}
+	.button_background_service{
+		width: 120px;
+	}
+	.our_services{
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.title_works{
+		padding-top: 100px;
+	}
+	.heg a{
+		margin-left: 1px;
+	}
+	.button_form {
+		width: 70px;
+		height:35px;
+		font-size: 15px;
 	}
 }
